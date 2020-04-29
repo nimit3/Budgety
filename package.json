@@ -1,0 +1,16 @@
+{
+  "name": "budgety",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "deploy": "gh-pages -d ../budgety"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://nimit3.github.io/budgety",
+  "dependencies": {
+    "gh-pages": "^2.2.0"
+  }
+}
