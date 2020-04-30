@@ -252,12 +252,12 @@ var UIController= (function(){
             var type;
             obj.budget > 0 ? type='inc' : type='exp';
             
-            document.querySelector(Domstrings.budgetLabel).textContent=formatNumber(obj.budget, );
+            document.querySelector(Domstrings.budgetLabel).textContent=formatNumber(obj.budget, type);
             document.querySelector(Domstrings.incomeLabel).textContent=formatNumber(obj.totalInc, 'inc');
             document.querySelector(Domstrings.expensesLabel).textContent=formatNumber(obj.totalExp, 'exp');
             
             if(obj.percentage > 0){
-                document.querySelector(Domstrings.percentageLabel).textContent=obj.percentage+'%';
+                document.querySelector(Domstrings.percentageLabel).textContent=obj.percentage +'%';
             }
             else{
                 document.querySelector(Domstrings.percentageLabel).textContent='---';
@@ -420,7 +420,7 @@ var Controller=( function(budgetCtrl, UICtrl){
               totalInc: 0,
               totalExp: 0,
               percentage: -1
-        });    
+            });    
          return setupEventListeners();
         }
     }
